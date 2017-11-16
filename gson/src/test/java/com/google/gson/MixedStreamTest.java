@@ -77,10 +77,14 @@ public final class MixedStreamTest extends TestCase {
 
   }
   public void testMyJSON2ReadMixedStreamed() throws IOException {
+    //可使用
+    //InputStream inputStream = new URL(“http://baidu.com”).openStream();
+    //JsonReader jsonReader = new JsonReader(new InputStreamReader(inputStream, "UTF-8"));
+
     Gson gson = new Gson();
     StringReader stringReader = new StringReader(MyJSON2);
     JsonReader jsonReader = new JsonReader(stringReader);
-
+    
     //jsonReader.beginObject();
     MyClass2 a = gson.fromJson(jsonReader, MyClass2.class);
     //jsonReader.endObject();
