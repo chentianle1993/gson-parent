@@ -71,9 +71,9 @@ public final class MixedStreamTest extends TestCase {
     MyClass2(String processGroups) {
       this.processGroups = processGroups;
     }
-
+    // can be deleted
     // used by Gson
-    MyClass2() {}
+    //MyClass2() {}
 
   }
   public void testMyJSON2ReadMixedStreamed() throws IOException {
@@ -97,9 +97,9 @@ public final class MixedStreamTest extends TestCase {
     MyClass(ArrayList<Object> processGroups) {
       this.processGroups = processGroups;
     }
-
+    // can be deleted
     // used by Gson
-    MyClass() {}
+    //MyClass() {}
 
   }
   public void testMyJSONReadMixedStreamed() throws IOException {
